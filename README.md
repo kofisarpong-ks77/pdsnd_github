@@ -33,6 +33,7 @@ Data for the first six months of 2017 are provided for all three cities. All thr
 
 The post-wrangled data files can be downloaded separately from [bikeshare-2.zip](https://drive.google.com/open?id=1XdN2xlBwow2gfE_Ptp3m2pnUIx8BBDTZ)
 
+
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
