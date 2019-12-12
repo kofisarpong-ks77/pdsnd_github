@@ -18,7 +18,20 @@ investigate one of three data files to answer the following questions:
 9. What are the earliest, most recent, and most popular birth years?
 
 ### Files used
-Include the files used
+Data for the first six months of 2017 are provided for all three cities. All three of the data files contain the same core six (6) columns:
+
+* Start Time (e.g. 2017-01-01 00:07:57)
+* End Time (e.g. 2017-01-01 00:20:53)
+* Trip Duration (in seconds, e.g., 776)
+* Start Station (e.g. Broadway & Barry Ave)
+* End Station (e.g. Sedgwick St & North Ave)
+* User Type (Subscriber or Customer)
+* The Chicago and New York City files also have the following two additional columns:
+
+* Gender
+* Birth Year
+
+The post-wrangled data files can be downloaded separately from [bikeshare-2.zip](https://drive.google.com/open?id=1XdN2xlBwow2gfE_Ptp3m2pnUIx8BBDTZ)
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
