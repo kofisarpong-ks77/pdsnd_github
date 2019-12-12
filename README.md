@@ -1,5 +1,5 @@
 ### Date created
-created This project on Thursday, 12 December, 2019.
+Created This project on Thursday, 12 December, 2019.
 
 ### **BikeShare Data Project**
 This project is the code for the Bikeshare Data analysis project as part of the Udacity Learning Python.
@@ -26,12 +26,14 @@ Data for the first six months of 2017 are provided for all three cities. All thr
 * Start Station (e.g. Broadway & Barry Ave)
 * End Station (e.g. Sedgwick St & North Ave)
 * User Type (Subscriber or Customer)
-* The Chicago and New York City files also have the following two additional columns:
+  
+The Chicago and New York City files also have the following two additional columns:
 
 * Gender
 * Birth Year
 
 The post-wrangled data files can be downloaded separately from [bikeshare-2.zip](https://drive.google.com/open?id=1XdN2xlBwow2gfE_Ptp3m2pnUIx8BBDTZ)
+
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
