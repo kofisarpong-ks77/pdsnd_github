@@ -97,7 +97,7 @@ def time_stats(df):
     # display the most common month
     MONTHS = ['All', 'January', 'February', 'March', 'April', 'May', 'June']
     Most_common_month = df['month'].value_counts().idxmax()
-    print('Most common month for Travelling is: ', Most_common_month)
+    print(f'Most common month for Travelling is {Most_common_month}.')
 
      #create weekdays column
     df['day_of_the_week'] = df['Start Time'].dt.weekday_name
@@ -105,7 +105,7 @@ def time_stats(df):
     # display the most common day of week
     DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ]
     Most_common_day_of_the_week = df['day_of_the_week'].mode()[0]
-    print('The most common day of the week for Travelling is: ', Most_common_day_of_the_week)
+    print(f'The most common day of the week for Travelling is {Most_common_day_of_the_week}.')
 
 
     #create Time column
@@ -113,7 +113,7 @@ def time_stats(df):
 
     # display the most common start hour
     Most_preferred_hour = df['Hour'].mode()[0]
-    print('The most preferred time for traveling is: ', Most_preferred_hour)
+    print(f'The most preferred time for traveling is {Most_preferred_hour}.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
