@@ -16,16 +16,19 @@ def get_filters():
          day - name of the day of week to filter by, or "all" to apply no day filter
          All inputs are string formatted
     """
-    print('Hello! My name is Python.Js and i\'m delighted to be your acquaintance  to walk through some US bikeshare data with you!')
+    Welcome_msg = "Hello! My name is Python.Js and i\'m delighted to be your acquaintance  to walk through some US bikeshare data with you!."
+    print(Welcome_msg)
     print()
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input('Now, Bikeshare Data is only available for New York, Chicago And Washington. Enter city here: ').lower()
+    available_data = 'Now, Bikeshare Data is only available for New York, Chicago And Washington. Enter city here: '
+    city = input().lower(available_data)
     while city not in CITY_DATA:
         city = input('Invalid city name. Try Again?: ').lower()
 
     print()
     # get user input for month (all, january, february, ... , june)
-    month = input('Again, Bikeshare Data is only available from January to June. \nSelect the month you want to explore or enter "all" \nto explore all the months simultaneously here: ')
+    Investigate_months = 'Again, Bikeshare Data is only available from January to June. \nSelect the month you want to explore or enter "all" \nto explore all the months simultaneously here: '
+    month = input(Investigate_months)
     MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     while month not in MONTHS:
         month = input('Invalid month name entered. Try Again?: ').title()
@@ -99,7 +102,7 @@ def time_stats(df):
     # display the most common month
     MONTHS = ['All', 'January', 'February', 'March', 'April', 'May', 'June']
     Most_common_month = df['month'].value_counts().idxmax()
-    print('Most common month for Travelling is: ', Most_common_month)
+    print(f'Most common month for Travelling is {Most_common_month}.')
 
      #create weekdays column
     df['day_of_the_week'] = df['Start Time'].dt.weekday_name
@@ -107,7 +110,7 @@ def time_stats(df):
     # display the most common day of week
     DAYS = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday' ]
     Most_common_day_of_the_week = df['day_of_the_week'].mode()[0]
-    print('The most common day of the week for Travelling is: ', Most_common_day_of_the_week)
+    print(f'The most common day of the week for Travelling is {Most_common_day_of_the_week}.')
 
 
     #create Time column
@@ -115,7 +118,7 @@ def time_stats(df):
 
     # display the most common start hour
     Most_preferred_hour = df['Hour'].mode()[0]
-    print('The most preferred time for traveling is: ', Most_preferred_hour)
+    print(f'The most preferred time for traveling is {Most_preferred_hour}.')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
