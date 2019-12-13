@@ -15,16 +15,19 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! My name is Python.Js and i\'m delighted to be your acquaintance  to walk through some US bikeshare data with you!')
+    Welcome_msg = "Hello! My name is Python.Js and i\'m delighted to be your acquaintance  to walk through some US bikeshare data with you!."
+    print(Welcome_msg)
     print()
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = input('Now, Bikeshare Data is only available for New York, Chicago And Washington. Enter city here: ').lower()
+    available_data = 'Now, Bikeshare Data is only available for New York, Chicago And Washington. Enter city here: '
+    city = input().lower(available_data)
     while city not in CITY_DATA:
         city = input('Invalid city name. Try Again?: ').lower()
 
     print()
     # get user input for month (all, january, february, ... , june)
-    month = input('Again, Bikeshare Data is only available from January to June. \nSelect the month you want to explore or enter "all" \nto explore all the months simultaneously here: ')
+    Investigate_months = 'Again, Bikeshare Data is only available from January to June. \nSelect the month you want to explore or enter "all" \nto explore all the months simultaneously here: '
+    month = input(Investigate_months)
     MONTHS = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
     while month not in MONTHS:
         month = input('Invalid month name entered. Try Again?: ').title()
