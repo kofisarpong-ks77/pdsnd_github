@@ -35,4 +35,9 @@ The Chicago and New York City files also have the following two additional colum
 The post-wrangled data files can be downloaded separately from [bikeshare-2.zip](https://drive.google.com/open?id=1XdN2xlBwow2gfE_Ptp3m2pnUIx8BBDTZ)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+* My invaluable appreciation goes to [Ozlerhakan](https://github.com/ozlerhakan/bikeshare/blob/master/bikeshare.py) and [Rounakarya](https://github.com/rounakarya/Explore-US-bikeshare-Data/blob/master/bikeshare_2.py)
+* for inspiring me from start to finish in making my bikeshare project completion a possibility.
+* [PandasDocs](https://pandas.pydata.org/pandas-docs/stable/) - pandas documentation was immensely helpful in understanding the implementation
+* of pandas methods used in this project.
+* Again, my [Udacity](https://www.udacity.com/) course instructors were extremely impactful from start to finish and i am grateful
+* to have gotten this privilege tap into their rich knowledge.
